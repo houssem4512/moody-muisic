@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mood Art Generator 🎨</title>
+  <link rel="stylesheet" href="art.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="../pictures/grenny.jpg" alt="Icon" class="icon">
+      <h1 class="typing" id="titleText"></h1>
+    </header>
+
+    <div class="input-section">
+      <input type="text" id="moodInput" placeholder="Enter your mood... (e.g. calm, energetic, nostalgic)">
+      <button id="generateBtn">🎨 Generate Art</button>
+    </div>
+
+    <div id="imageContainer" class="hidden">
+      <h3>Generated Art for Your Mood</h3>
+      <img id="generatedImage" src="" alt="AI Art">
+    </div>
+  </div>
+
+  <script src="art.js"></script>
+</body>
+</html>

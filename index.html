@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mood-based YouTube Playlist</title>
+  <link rel="stylesheet" href="mood.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎵 Moody YouTube</h1>
+    <input type="text" id="moodInput" placeholder="Enter your mood (e.g. happy, calm)" />
+    <button id="searchBtn">Generate Playlist</button>
+
+    <div id="results" class="results"></div>
+
+    <div id="playerContainer" class="player-container hidden">
+      <h2>Now Playing</h2>
+      <iframe
+        id="youtubePlayer"
+        width="560"
+        height="315"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
